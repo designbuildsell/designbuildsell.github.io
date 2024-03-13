@@ -10,9 +10,8 @@ Design Build Sell website's source code is hosted here. Export to be copied to t
 
 [Documentation](https://docusaurus.io/docs)
 
-Default template using Typescript
-
 ```bash
+#create project using default template and typescript
 npx create-docusaurus@latest my-website classic --typescript
 
 #change directory
@@ -26,9 +25,6 @@ npm start
 
 
 ---
-
-Install packages
-Start development server
 
 Make changes. Push to the branch??
 
