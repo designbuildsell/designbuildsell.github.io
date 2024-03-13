@@ -4,7 +4,29 @@ Design Build Sell website's source code is hosted here. Export to be copied to t
 
 ## Workflow
 
-Docusaurus
+### Docusaurus
+
+[Docusaurus](https://docusaurus.io/)
+
+[Documentation](https://docusaurus.io/docs)
+
+Default template using Typescript
+
+```bash
+npx create-docusaurus@latest my-website classic --typescript
+
+#change directory
+cd my-website
+
+#start server
+npm start
+
+```
+
+
+
+---
+
 Install packages
 Start development server
 
