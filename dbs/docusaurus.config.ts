@@ -35,6 +35,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           //editUrl:
@@ -73,7 +74,8 @@ const config: Config = {
         {to: '/design', label: 'Design', position: 'left'},
         {to: '/build', label: 'Build', position: 'left'},
         {to: '/sell', label: 'Sell', position: 'left'},
-
+        {to: '/blog', label: 'Blog', position: 'right'},
+        {to: '/docs', label: 'Tutorial', position: 'right'},
         /*{
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -81,18 +83,30 @@ const config: Config = {
         },*/
       ],
     },
+    docs: {
+      sidebar: {
+        //makes sidebar hideable
+        hideable: true,
+        //other catergories auto collapse while expanding
+        autoCollapseCategories: true,
+      }
+    },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Lists',
+          title: 'Quick Access',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Blog',
+              to: '/blog',
+            },
+            {
+              label: 'Tutorials',
               to: '/docs/intro',
             },
             {
-              label: 'Learning Resources',
+              label: 'Resources',
               to: '/docs/intro',
             },
             {
@@ -105,30 +119,9 @@ const config: Config = {
             },
           ],
         },
+
         {
-          title: 'Social',
-          items: [
-            {
-              label: 'YouTube',
-              //using href instead of to will result in an icon
-              to: 'https://youtube.com/@designbuildsell',
-            },
-            {
-              label: 'Instagram',
-              to: 'https://instagram.com/designbuildsell.xyz',
-            },
-            {
-              label: 'Twitter',
-              to: 'https://twitter.com/docusaurus',
-            },
-            {
-              label: 'Substack',
-              to: 'https://designbuildsell.substack.com',
-            },
-          ],
-        },
-        {
-          title: 'More',
+          title: 'Community',
           items: [
             {
               label: 'Discord',
@@ -139,10 +132,35 @@ const config: Config = {
               to: 'https://twitch.com/designbuildsell',
             },
             {
+              label: 'Substack',
+              to: 'https://designbuildsell.substack.com',
+            },
+            
+          ],
+        },
+        {
+          title: 'Social',
+          items: [
+            {
+              label: 'Twitter',
+              to: 'https://twitter.com/docusaurus',
+            },
+            {
+              label: 'YouTube',
+              //using href instead of to will result in an icon
+              to: 'https://youtube.com/@designbuildsell',
+            },
+            {
+              label: 'Instagram',
+              to: 'https://instagram.com/designbuildsell.xyz',
+            },
+
+            {
               label: 'GitHub',
               to: 'https://github.com/designbuildsell',
             },
-          ],
+            
+          ], 
         },
       ],
       copyright: `© Copyright ${new Date().getFullYear()} DesignBuildSell.xyz`,
@@ -155,3 +173,4 @@ const config: Config = {
 };
 
 export default config;
+

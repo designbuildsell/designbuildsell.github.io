@@ -4,6 +4,8 @@ Design Build Sell website's source code is hosted here. Export to be copied to t
 
 ## Workflow
 
+For assets used see [designbuildsell_assets](https://github.com/aecabhijeet/designbuildsell_assets) repository
+
 ### Docusaurus
 
 [Docusaurus](https://docusaurus.io/)
@@ -26,12 +28,9 @@ npm start
 
 ---
 
-Make changes. Push to the branch??
+### Algolia
 
-
-Docusaurus used
-
-For assets used see designbuildsell_assets
+Search provided by [Algolia](https://dashboard.algolia.com/)
 
 
 One try each quarter???
