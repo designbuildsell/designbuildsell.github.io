@@ -35,6 +35,9 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          //To change docs folder to tutorial and /docs path to /tutorial
+          //customDocsPath: 'tutorial',
+          //routeBasePath: 'tutorial',
           
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.

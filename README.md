@@ -32,7 +32,13 @@ npm start
 
 Search provided by [Algolia](https://dashboard.algolia.com/)
 
+### NPM
 
+npm packages used other than docusaurus default
+
+```bash title = "react-youtube"
+npm install react-youtube
+```
 One try each quarter???
 
 branch name
