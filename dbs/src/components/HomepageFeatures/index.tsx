@@ -11,7 +11,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Design',
-    Svg: require('@site/static/img/CitySkyline.svg').default,
+    Svg: require('@site/static/img/CityDesign.svg').default,
     description: (
       <>
         Design how to bla bla bla.
@@ -20,7 +20,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Build',
-    Svg: require('@site/static/img/CitySkyline.svg').default,
+    Svg: require('@site/static/img/CityScene.svg').default,
     description: (
       <>
         learn to build bla bla bla
