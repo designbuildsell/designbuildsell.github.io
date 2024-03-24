@@ -13,14 +13,26 @@ For assets used see [designbuildsell_assets](https://github.com/aecabhijeet/desi
 [Documentation](https://docusaurus.io/docs)
 
 ```bash
-#create project using default template and typescript
+# Create new project using default template and typescript
 npx create-docusaurus@latest my-website classic --typescript
 
-#change directory
+# Change directory
 cd my-website
 
-#start server
+# Start server
 npm start
+```
+
+```bash
+# If cloned existing project from Github
+# Install all packages
+cd my-website
+npm i
+
+# Start server
+npm start
+
+
 
 ```
 
@@ -33,6 +45,28 @@ npm start
 #### Pages
 
 
+
+#### Work In Progress
+
+By default, files prefixed with `_`, test files `.test.js`, and files in `__tests__` directory are not turned into pages, and no routes are created (see the `exclude` option).
+
+```
+my-website
+├── src
+│   └── pages
+│       ├── styles.module.css
+│       ├── index.js
+│       ├── _ignored.js
+│       ├── _ignored-folder
+│       │   ├── Component1.js
+│       │   └── Component2.js
+│       └── support
+│           ├── index.js
+│           └── styles.module.css
+.
+```
+
+
 ---
 
 ### Algolia
@@ -43,7 +77,7 @@ Search provided by [Algolia](https://dashboard.algolia.com/)
 
 npm packages used other than docusaurus default
 
-```bash title = "react-youtube"
+```bash title="react-youtube"
 npm install react-youtube
 ```
 One try each quarter???
