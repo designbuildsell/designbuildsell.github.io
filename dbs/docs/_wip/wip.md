@@ -1,13 +1,12 @@
 ---
 title: Work In Progress
-description: my hello page description
+description: Ideas on the go. 
 hide_table_of_contents: true
 
 ---
 
 # Work In Progress
 
-Create a folder with work in progress content. How to not include in the final export?
 
 Things to work on at the moment:
 Andrej karpathy tutorial 
@@ -30,8 +29,43 @@ Free vs paid content distinction
 
 Create a syllabus for the architecture students. Your anchor content so as to say.
 
-- Learning how to learn. How to learn anything quick. 
-- Paradox of life. Time, money and energy. Time is of the essence. Leverage... other lessons of life
+- Learning how to learn. Coursera summary
+
+- Learning personalities
+
+- How to learn anything quick. Following the leaders. Memory and retention... spaced repetition etc.
+
+- Knowledge management
+ - systems and tools
+ - Information retrieval
+
+- Domain specific knowledge management?
+ - apprenticeship method
+ - other methods...
+
+- AI to accelerate your learning. How?
+
+- State of architecture education in India
+ - can it be condensed? what will it look like.. Musk's strategy
+
+- Architecture education in US? What can be changed?
+
+- Thinking and decision making for architects. Most useful mental models for architects. Illustrate with examples.
+
+
+
+
+
+
+
+
+
+
+
+
+- Paradox of life. Time, money and energy. Time is of the essence. 
+- Leverage... other lessons of life
+naval, Luca de llama etc.
 - Weeks in life. visualize.
 - Architecture school syllabus analyze. Can this be compressed in a much shorter amount of time.
   - What is the most applicable skills to learn ?
