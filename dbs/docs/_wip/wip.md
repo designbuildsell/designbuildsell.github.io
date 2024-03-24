@@ -55,6 +55,12 @@ Create a syllabus for the architecture students. Your anchor content so as to sa
 
 
 
+Ncert book notes example in obsidian.
+Push the change to policy makers. Can be a good way to attract a completely new demographics i.e. school students
+
+
+
+
 
 
 
