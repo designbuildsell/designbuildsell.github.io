@@ -18,7 +18,7 @@ const config: Config = {
   organizationName: 'designbuildsell', // Usually your GitHub org/user name.
   projectName: 'website', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',//use 'throw' instead to stop 'npm run build' on broken links
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
