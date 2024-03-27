@@ -31,18 +31,16 @@ const config: Config = {
 
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       {
         docs: {
-          sidebarPath: './sidebars.ts',
-          //To change docs folder to tutorial and /docs path to /tutorial
-          //customDocsPath: 'tutorial',
-          //routeBasePath: 'tutorial',
-          
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          //editUrl:
-          //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          id: 'design',
+          // id: 'product', // omitted => default instance
+          path: 'design-doc',
+          routeBasePath: 'design',
+          sidebarPath: './sidebarsDesign.ts',
+          //editUrl: 'https://github.com/designbuildsell/website...'
+          // ... other options
         },
         blog: {
           showReadingTime: true,
@@ -57,7 +55,47 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'build',
+        path: 'build-doc',
+        routeBasePath: 'build',
+        sidebarPath: './sidebarsBuild.ts',
+        // ... other options
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'sell',
+        path: 'sell-doc',
+        routeBasePath: 'sell',
+        sidebarPath: './sidebarsSell.ts',
+        // ... other options
+      },
+    ] 
+  ],
+  /*
+    [
+      'classic',
+      {
+        docs: {
+          sidebarPath: './sidebars.ts',
+          //To change docs folder to tutorial and /docs path to /tutorial
+          //customDocsPath: 'tutorial',
+          //routeBasePath: 'tutorial',
+          
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          //editUrl:
+          //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        },
+      } satisfies Preset.Options,
+    ],
+  ],
+*/
   themeConfig: {
     // Replace with your project's social card
     image: 'img/favicon.ico',
@@ -78,7 +116,7 @@ const config: Config = {
         {to: '/build', label: 'Build', position: 'left'},
         {to: '/sell', label: 'Sell', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'right'},
-        {to: '/docs', label: 'Tutorial', position: 'right'},
+        {to: '/', label: 'Tutorial', position: 'right'},
         /*{
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -106,19 +144,19 @@ const config: Config = {
             },
             {
               label: 'Tutorials',
-              to: '/docs/intro',
+              to: '/',
             },
             {
               label: 'Resources',
-              to: '/docs/intro',
+              to: '/',
             },
             {
               label: 'Books',
-              to: '/docs/intro',
+              to: '/',
             },
             {
               label: 'Tools',
-              to: '/docs/intro',
+              to: '/',
             },
           ],
         },
@@ -146,7 +184,7 @@ const config: Config = {
           items: [
             {
               label: 'Twitter',
-              to: 'https://twitter.com/docusaurus',
+              to: 'https://twitter.com/designbuildsell',
             },
             {
               label: 'YouTube',

@@ -22,6 +22,7 @@ cd my-website
 # Start server
 npm start
 ```
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
 ```bash
 # If cloned existing project from Github
@@ -32,11 +33,15 @@ npm i
 # Start server
 npm start
 
-
-
 ```
 
 #### Docs
+
+Multiple plugin instances used to create documentation/tutorial related to Design, Build, Sell
+
+atoms and bits??
+
+
 
 
 #### Blog
@@ -66,6 +71,7 @@ my-website
 .
 ```
 
+`_wip` folder being used to store work in progress content
 
 ---
 
@@ -85,3 +91,46 @@ One try each quarter???
 branch name
 
 edit that
+
+
+
+
+
+### Deployment
+
+```bash
+npm run build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+> React doesn't like a `build` directory with content. Therefore we switched to `build-doc` directory to keep things simple.
+
+
+```bash
+npm run --prefix ??
+```
+
+It is important to test your build locally before deploying it for production.
+
+
+```bash
+npm run serve
+```
+
+???
+
+Using SSH:
+
+```
+$ USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
