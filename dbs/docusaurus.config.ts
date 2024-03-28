@@ -39,6 +39,7 @@ const config: Config = {
           path: 'design-doc',
           routeBasePath: 'design',
           sidebarPath: './sidebarsDesign.ts',
+          editUrl: 'https://github.com/designbuildsell/designbuildsell.github.io/tree/main/dbs/',
           //editUrl: 'https://github.com/designbuildsell/website...'
           // ... other options
         },
@@ -46,9 +47,7 @@ const config: Config = {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-						'https://github.com/designbuildsell/designbuildsell.github.io/tree/main/dbs/'	
-            //'https://github.com/designbuildsell/designbuildsell.github.io/dbs/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/designbuildsell/designbuildsell.github.io/tree/main/dbs/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -64,6 +63,7 @@ const config: Config = {
         path: 'build-doc',
         routeBasePath: 'build',
         sidebarPath: './sidebarsBuild.ts',
+        editUrl: 'https://github.com/designbuildsell/designbuildsell.github.io/tree/main/dbs/',
         // ... other options
       },
     ],
@@ -74,6 +74,7 @@ const config: Config = {
         path: 'sell-doc',
         routeBasePath: 'sell',
         sidebarPath: './sidebarsSell.ts',
+        editUrl: 'https://github.com/designbuildsell/designbuildsell.github.io/tree/main/dbs/',
         // ... other options
       },
     ] 
