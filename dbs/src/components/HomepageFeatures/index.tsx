@@ -14,7 +14,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/CityDesign.svg').default,
     description: (
       <>
-        Design how to bla bla bla.
+        How to Design.
       </>
     ),
   },
@@ -23,9 +23,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/CityScene.svg').default,
     description: (
       <>
-        learn to build bla bla bla
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        How to Build.
       </>
     ),
   },
@@ -34,7 +32,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/CitySkyline.svg').default,
     description: (
       <>
-        Learn to sell bla bla
+        How to Sell.
       </>
     ),
   },

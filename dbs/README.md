@@ -1,6 +1,11 @@
 # Source Code
 Design Build Sell website's source code is hosted here. Export to be copied to the (live) website folder on designbuildsell github account.
 
+## To Do
+
+SEO properties edit
+
+
 
 ## Workflow
 
@@ -94,6 +99,10 @@ branch name
 edit that
 
 
+
+### SEO
+
+To prevent a single page from being indexed, use <meta name="robots" content="noindex"> as page metadata.
 
 
 

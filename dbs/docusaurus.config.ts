@@ -99,6 +99,13 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/favicon.ico',
+    //Some meta tags for SEO
+    metadata: [
+      {name: 'keywords', content: 'design, build, sell, blog, tutorial, architecture, engineering, construction, software'},
+      {name: 'twitter:card', content: 'summary_large_image'},
+    ],
+
+    //Navbar elements
     navbar: {
       title: '',
       logo: {
