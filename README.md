@@ -28,7 +28,8 @@ This command starts a local development server and opens up a browser window. Mo
 # If cloned existing project from Github
 # Install all packages
 cd my-website
-npm i
+# Clean install of npm packages
+npm ci
 
 # Start server
 npm start
