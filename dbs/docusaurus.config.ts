@@ -47,7 +47,8 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/designbuildsell/designbuildsell.github.io/dbs/tree/main/packages/create-docusaurus/templates/shared/',
+						'https://github.com/designbuildsell/designbuildsell.github.io/tree/main/dbs/blog'	
+            //'https://github.com/designbuildsell/designbuildsell.github.io/dbs/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: './src/css/custom.css',
