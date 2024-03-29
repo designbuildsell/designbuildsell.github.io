@@ -3,8 +3,10 @@ Design Build Sell website's source code is hosted here. Export to be copied to t
 
 ## To Do
 
-SEO properties edit
-
+- SEO properties edit. Google
+- Algolia integration
+- Imgur to host images??
+-
 
 
 ## Workflow
@@ -84,6 +86,10 @@ my-website
 ### Algolia
 
 Search provided by [Algolia](https://dashboard.algolia.com/)
+
+See [Docusaurus Search Documentation](https://docusaurus.io/docs/search#using-algolia-docsearch)
+
+
 
 ### NPM
 

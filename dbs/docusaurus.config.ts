@@ -104,7 +104,38 @@ const config: Config = {
       {name: 'keywords', content: 'design, build, sell, blog, tutorial, architecture, engineering, construction, software'},
       {name: 'twitter:card', content: 'summary_large_image'},
     ],
+    //Algolia Doc Search
+    algolia: {
+      // The application ID provided by Algolia
+      appId: '63QQXNG86J',
 
+      // Public API key: it is safe to commit it
+      apiKey: '5cde40ad852e8fe5ed0af1acc6879771',
+
+      //Temporary name. Can be refined when the content gets more structured.
+      indexName: 'Master',
+
+      // Optional: see doc section below
+      contextualSearch: true,
+
+      // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+      //externalUrlRegex: 'external\\.com|domain\\.com',
+
+      // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+      //replaceSearchResultPathname: {
+      //  from: '/docs/', // or as RegExp: /\/docs\//
+      //  to: '/',
+      //},
+
+      // Optional: Algolia search parameters
+      //searchParameters: {},
+
+      // Optional: path for search page that enabled by default (`false` to disable it)
+      searchPagePath: 'search',
+
+      //... other Algolia params
+    },
+  
     //Navbar elements
     navbar: {
       title: '',
