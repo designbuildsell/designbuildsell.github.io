@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://designbuildsell.xyz/blog</id>
+    <title>Design Build Sell Blog</title>
+    <updated>2024-01-01T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://designbuildsell.xyz/blog"/>
+    <subtitle>Design Build Sell Blog</subtitle>
+    <icon>https://designbuildsell.xyz/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[My Anthology]]></title>
+        <id>https://designbuildsell.xyz/blog/my-anthology</id>
+        <link href="https://designbuildsell.xyz/blog/my-anthology"/>
+        <updated>2024-01-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A short description of this page. Will override default]]></summary>
+        <content type="html"><![CDATA[<p>My Inspiration</p>
+<p>People</p>
+<p>Places</p>
+<p>Things</p>
+<p>Quotes</p>
+<p>Example file to use as starter template for documents</p>
+<p>Use a <code>&lt;!--</code> <code>truncate</code> <code>--&gt;</code> comment to limit blog post size in the list view.</p>
+<p>Long form post</p>]]></content>
+        <author>
+            <name>AJ</name>
+            <uri>https://github.com/aecabhijeet</uri>
+        </author>
+        <category label="quote" term="quote"/>
+        <category label="inspiration" term="inspiration"/>
+        <category label="essay" term="essay"/>
+        <category label="about me" term="about me"/>
+    </entry>
+</feed>
