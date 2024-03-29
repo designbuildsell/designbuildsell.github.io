@@ -192,7 +192,7 @@ const config: Config = {
             },
             {
               label: 'Books',
-              to: '/',
+              to: '/books',
             },
             {
               label: 'Tools',
@@ -244,7 +244,7 @@ const config: Config = {
           ], 
         },
       ],
-      copyright: `© Copyright ${new Date().getFullYear()} DesignBuildSell.xyz`,
+      copyright: `© copyright ${new Date().getFullYear()} DesignBuildSell.xyz`,
     },
     prism: {
       theme: prismThemes.github,

@@ -13,7 +13,7 @@ export default function Hello() {
           fontSize: '20px',
         }}>
         <p>
-          Build content goes here
+          Build
         </p>
       </div>
     </Layout>

@@ -13,7 +13,7 @@ export default function Hello() {
           fontSize: '20px',
         }}>
         <p>
-          Sell
+          Books
         </p>
       </div>
     </Layout>

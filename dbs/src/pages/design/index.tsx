@@ -13,7 +13,7 @@ export default function Hello() {
           fontSize: '20px',
         }}>
         <p>
-          Design specific content goes here.
+          Design.
         </p>
       </div>
     </Layout>

@@ -3,10 +3,16 @@ Design Build Sell website's source code is hosted here. Export to be copied to t
 
 ## To Do
 
+- skeleton content for all sections like design build sell book tool etc.
+- React page for each section to pull together various content. Blog with design tag, Books with design tag and so on
+- Database integration
+- look into axios etc.
+- Dont push to github until local build is satisfactory
 - SEO properties edit. Google
-- Algolia integration
+- Algolia integration... dig deeper
 - Imgur to host images??
--
+- Notion databse integration .. eg https://www.makeuseof.com/react-notion-database-api-store-data/
+
 
 
 ## Workflow
@@ -98,11 +104,10 @@ npm packages used other than docusaurus default
 ```bash title="react-youtube"
 npm install react-youtube
 ```
-One try each quarter???
 
-branch name
+#### Data Tables
 
-edit that
+[Link](https://datatables.net/download/npm)
 
 
 
