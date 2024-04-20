@@ -85,7 +85,7 @@ my-website
 .
 ```
 
-`_wip` folder being used to store work in progress content
+`_wip` folder redacted. See `designbuildsell_assets/wip` being used to store work in progress content including templates.
 
 ---
 
