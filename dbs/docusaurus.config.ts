@@ -137,7 +137,15 @@ const config: Config = {
 
       //... other Algolia params
     },
-  
+    // Color theme
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+      // match user's system theme
+      respectPrefersColorScheme: true,
+    },
+
+
     //Navbar elements
     navbar: {
       title: '',
@@ -174,6 +182,13 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
+      /*logo: {
+        alt: 'Design Build Sell Logo',
+        src: 'img/footer.png',
+        //href: 'https://opensource.fb.com',
+        width: 32,
+        height: 32,
+      }*/
       links: [
         {
           title: 'Quick Access',
