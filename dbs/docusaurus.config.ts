@@ -252,8 +252,8 @@ const config: Config = {
             },
 
             {
-              label: 'GitHub',
-              to: 'https://github.com/designbuildsell',
+              label: 'Linktree',
+              to: 'https://linktr.ee/designbuildsell',
             },
             
           ], 
