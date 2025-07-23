@@ -103,7 +103,7 @@ const config: Config = {
     image: 'img/favicon.ico',
     //Some meta tags for SEO
     metadata: [
-      {name: 'keywords', content: 'design, build, sell, blog, tutorial, architecture, engineering, construction, software'},
+      {name: 'keywords', content: 'design, build, sell, blog, tutorial, architecture, engineering, construction, software, product, saas'},
       {name: 'twitter:card', content: 'summary_large_image'},
     ],
     //Algolia Doc Search
