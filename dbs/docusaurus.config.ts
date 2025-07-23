@@ -228,8 +228,8 @@ const config: Config = {
               to: 'https://twitch.com/designbuildsell',
             },
             {
-              label: 'Substack',
-              to: 'https://designbuildsell.substack.com',
+              label: 'Newsletter',
+              to: 'https://designbuildsell.substack.com',            
             },
             
           ],
