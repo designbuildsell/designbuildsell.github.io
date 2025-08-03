@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdbs=self.webpackChunkdbs||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"My Anthology","permalink":"/blog/my-anthology","unlisted":false,"date":"2024-01-01T00:00:00.000Z"}]}')}}]);
