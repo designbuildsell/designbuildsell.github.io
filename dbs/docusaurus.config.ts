@@ -33,16 +33,7 @@ const config: Config = {
     [
       '@docusaurus/preset-classic',
       {
-        docs: {
-          id: 'design',
-          // id: 'product', // omitted => default instance
-          path: 'design-doc',
-          routeBasePath: 'design',
-          sidebarPath: './sidebarsDesign.ts',
-          editUrl: 'https://github.com/designbuildsell/designbuildsell.github.io/tree/main/dbs/',
-          //editUrl: 'https://github.com/designbuildsell/website...'
-          // ... other options
-        },
+        docs: false,
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
@@ -56,6 +47,17 @@ const config: Config = {
     ],
   ],
   plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'design',
+        path: 'design-doc',
+        routeBasePath: 'design',
+        sidebarPath: './sidebarsDesign.ts',
+        editUrl: 'https://github.com/designbuildsell/designbuildsell.github.io/tree/main/dbs/',
+        // ... other options
+      },
+    ],    
     [
       '@docusaurus/plugin-content-docs',
       {
@@ -79,25 +81,7 @@ const config: Config = {
       },
     ] 
   ],
-  /*
-    [
-      'classic',
-      {
-        docs: {
-          sidebarPath: './sidebars.ts',
-          //To change docs folder to tutorial and /docs path to /tutorial
-          //customDocsPath: 'tutorial',
-          //routeBasePath: 'tutorial',
-          
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          //editUrl:
-          //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-      } satisfies Preset.Options,
-    ],
-  ],
-*/
+
   themeConfig: {
     // Replace with your project's social card
     image: 'img/favicon.ico',
@@ -164,7 +148,6 @@ const config: Config = {
         {to: '/build', label: 'Build', position: 'left'},
         {to: '/sell', label: 'Sell', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'right'},
-        {to: '/', label: 'Tutorial', position: 'right'},
         /*{
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -211,7 +194,7 @@ const config: Config = {
             },
             {
               label: 'Tools',
-              to: '/',
+              to: '/tools',
             },
           ],
         },
