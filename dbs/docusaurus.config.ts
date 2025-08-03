@@ -43,6 +43,10 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        gtag: {
+          trackingID: 'G-XXXXXXXXXX', // Your GA4 measurement ID
+          anonymizeIP: true, // Optional
+        }
       } satisfies Preset.Options,
     ],
   ],
