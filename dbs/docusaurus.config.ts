@@ -45,7 +45,7 @@ const config: Config = {
         },
         gtag: {
           trackingID: 'G-XXXXXXXXXX', // Your GA4 measurement ID
-          anonymizeIP: true, // Optional
+          anonymizeIP: false, // Optional
         }
       } satisfies Preset.Options,
     ],
