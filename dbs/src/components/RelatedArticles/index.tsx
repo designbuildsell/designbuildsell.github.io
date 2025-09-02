@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
-import { useDoc } from '@docusaurus/plugin-content-docs/client';
 import { useDocsData } from '@docusaurus/plugin-content-docs/client';
+import { useLocation } from '@docusaurus/router';
 import styles from './styles.module.css';
 
 type Doc = {
@@ -14,19 +14,34 @@ type Doc = {
 };
 
 const RelatedArticles = () => {
-  // ✅ Get current doc using supported hook
-  const currentDoc = useDoc();
-  const currentTags = currentDoc.metadata.frontMatter.tags || [];
+  // Load all docs from all three plugins
+  const designDocs = useDocsData('design')?.docs || {};
+  const buildDocs = useDocsData('build')?.docs || {};
+  const sellDocs = useDocsData('sell')?.docs || {};
 
-  if (currentTags.length === 0) {
+  // Combine all docs into an array
+  const allDocs: Doc[] = [
+    ...Object.values(designDocs),
+    ...Object.values(buildDocs),
+    ...Object.values(sellDocs),
+  ];
+
+  // Get current URL
+  const { pathname } = useLocation();
+
+  // Find current doc by matching permalink
+  const currentDoc = allDocs.find(doc => doc.permalink === pathname);
+
+  // If no current doc or no tags, show nothing
+  if (!currentDoc || !currentDoc.frontMatter.tags?.length) {
     return null;
   }
 
-  // ✅ Get all docs in the current version
-  const { docs } = useDocsData('default'); // Change if you use pluginId like 'design', 'build', etc.
+  const currentTags = currentDoc.frontMatter.tags;
 
-  const relatedDocs = Object.values(docs)
-    .filter(doc => doc.id !== currentDoc.id)
+  // Find related docs with shared tags
+  const relatedDocs = allDocs
+    .filter(doc => doc.permalink !== pathname) // Exclude current
     .map(doc => {
       const docTags = doc.frontMatter.tags || [];
       const commonTagsCount = docTags.filter(tag => currentTags.includes(tag)).length;
@@ -34,7 +49,7 @@ const RelatedArticles = () => {
     })
     .filter(doc => doc.commonTagsCount > 0)
     .sort((a, b) => b.commonTagsCount - a.commonTagsCount)
-    .slice(0, 5);
+    .slice(0, 5); // Top 5
 
   if (relatedDocs.length === 0) {
     return null;
