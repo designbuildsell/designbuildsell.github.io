@@ -1,5 +1,14 @@
 ---
 sidebar_position: 1
+tags:
+  - pillar:sell
+  - domain:physical
+  - domain:digital
+  - domain:hybrid
+  - audience:investor
+  - audience:founder
+  - level:foundational
+  - type:article
 ---
 
 # Tutorial Intro

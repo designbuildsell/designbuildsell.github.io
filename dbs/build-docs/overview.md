@@ -1,5 +1,15 @@
 ---
 sidebar_position: 1
+tags:
+  - pillar:build
+  - domain:physical
+  - domain:digital
+  - domain:hybrid
+  - audience:contractor
+  - audience:pm
+  - audience:founder
+  - level:foundational
+  - type:article
 ---
 
 # Tutorial Intro

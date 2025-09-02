@@ -1,8 +1,16 @@
-<!--
 ---
- sidebar_position: 1 
+sidebar_position: 1
+tags:
+  - pillar:design
+  - domain:physical
+  - domain:digital
+  - domain:hybrid
+  - audience:architect
+  - audience:pm
+  - audience:founder
+  - level:foundational
+  - type:article
 ---
--->
 
 # Tutorial Intro
 

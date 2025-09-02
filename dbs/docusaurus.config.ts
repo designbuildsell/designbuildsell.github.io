@@ -46,7 +46,13 @@ const config: Config = {
         gtag: {
           trackingID: 'G-XXXXXXXXXX', // Your GA4 measurement ID
           anonymizeIP: false, // Optional
-        }
+        },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+        },
       } satisfies Preset.Options,
     ],
   ],
@@ -55,7 +61,7 @@ const config: Config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'design',
-        path: 'design-doc',
+        path: 'design-docs',
         routeBasePath: 'design',
         sidebarPath: './sidebarsDesign.ts',
         editUrl: 'https://github.com/designbuildsell/designbuildsell.github.io/tree/main/dbs/',
@@ -66,7 +72,7 @@ const config: Config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'build',
-        path: 'build-doc',
+        path: 'build-docs',
         routeBasePath: 'build',
         sidebarPath: './sidebarsBuild.ts',
         editUrl: 'https://github.com/designbuildsell/designbuildsell.github.io/tree/main/dbs/',
@@ -77,13 +83,14 @@ const config: Config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'sell',
-        path: 'sell-doc',
+        path: 'sell-docs',
         routeBasePath: 'sell',
         sidebarPath: './sidebarsSell.ts',
         editUrl: 'https://github.com/designbuildsell/designbuildsell.github.io/tree/main/dbs/',
         // ... other options
       },
-    ] 
+    ],
+    '@docusaurus/plugin-ideal-image',
   ],
 
   themeConfig: {
@@ -142,21 +149,10 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        /*{
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },*/
         {to: '/design', label: 'Design', position: 'left'},
         {to: '/build', label: 'Build', position: 'left'},
         {to: '/sell', label: 'Sell', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'right'},
-        /*{
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },*/
       ],
     },
     docs: {
@@ -190,19 +186,22 @@ const config: Config = {
             },
             {
               label: 'Resources',
-              to: '/',
+              to: '/resources',
             },
             {
               label: 'Books',
               to: '/books',
             },
             {
-              label: 'Tools',
-              to: '/tools',
+              label: 'Community',
+              to: '/community',
+            },
+            {
+              label: 'About',
+              to: '/about',
             },
           ],
         },
-
         {
           title: 'Community',
           items: [
@@ -218,7 +217,6 @@ const config: Config = {
               label: 'Newsletter',
               to: 'https://designbuildsell.substack.com',            
             },
-            
           ],
         },
         {
