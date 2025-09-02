@@ -244,7 +244,7 @@ const config: Config = {
           ], 
         },
       ],
-      copyright: `© copyright ${new Date().getFullYear()} DesignBuildSell.xyz`,
+      copyright: `© Copyright ${new Date().getFullYear()} DesignBuildSell.xyz`,
     },
     prism: {
       theme: prismThemes.github,
