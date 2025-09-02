@@ -17,27 +17,27 @@ const sidebarsSell: SidebarsConfig = {
       type: 'category',
       label: 'Physical Sales',
       items: [
-        'physical-sales/real-estate-marketing-sales',
-        'physical-sales/construction-services-bidding-crm',
-        'physical-sales/channel-partnerships',
+        'physical/real-estate-marketing-sales',
+        'physical/construction-services-bidding-crm',
+        'physical/channel-partnerships',
       ],
     },
     {
       type: 'category',
       label: 'Digital Sales',
       items: [
-        'digital-sales/saas-monetization-pricing',
-        'digital-sales/ecommerce-funnels',
-        'digital-sales/customer-success-retention',
+        'digital/saas-monetization-pricing',
+        'digital/ecommerce-funnels',
+        'digital/customer-success-retention',
       ],
     },
     {
       type: 'category',
       label: 'Hybrid Sales',
       items: [
-        'hybrid-sales/proptech-contech-gtm',
-        'hybrid-sales/omnichannel-phygital',
-        'hybrid-sales/data-smart-building-monetization',
+        'hybrid/proptech-contech-gtm',
+        'hybrid/omnichannel-phygital',
+        'hybrid/data-smart-building-monetization',
       ],
     },
     {

@@ -17,27 +17,27 @@ const sidebarsBuild: SidebarsConfig = {
       type: 'category',
       label: 'Physical Build',
       items: [
-        'physical-build/construction-management',
-        'physical-build/prefab-modular',
-        'physical-build/quality-safety',
+        'physical/construction-management',
+        'physical/prefab-modular',
+        'physical/quality-safety',
       ],
     },
     {
       type: 'category',
       label: 'Digital Build',
       items: [
-        'digital-build/sdlc-devops-cicd',
-        'digital-build/platform-api-development',
-        'digital-build/testing-deployment',
+        'digital/sdlc-devops-cicd',
+        'digital/platform-api-development',
+        'digital/testing-deployment',
       ],
     },
     {
       type: 'category',
       label: 'Hybrid Build',
       items: [
-        'hybrid-build/iot-implementation',
-        'hybrid-build/robotics-automation-3d-printing',
-        'hybrid-build/smart-construction-cps',
+        'hybrid/iot-implementation',
+        'hybrid/robotics-automation-3d-printing',
+        'hybrid/smart-construction-cps',
       ],
     },
     {

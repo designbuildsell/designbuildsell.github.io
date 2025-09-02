@@ -17,36 +17,36 @@ const sidebarsDesign: SidebarsConfig = {
       type: 'category',
       label: 'Physical Design',
       items: [
-        'physical-design/architecture-bim',
-        'physical-design/industrial-product-design',
-        'physical-design/spatial-urban-design',
+        'physical/architecture-bim',
+        'physical/industrial-product-design',
+        'physical/spatial-urban-design',
       ],
     },
     {
       type: 'category',
       label: 'Digital Design',
       items: [
-        'digital-design/ux-ui-design-systems',
-        'digital-design/service-design-blueprints',
-        'digital-design/software-data-architecture',
+        'digital/ux-ui-design-systems',
+        'digital/service-design-blueprints',
+        'digital/software-data-architecture',
       ],
     },
     {
       type: 'category',
       label: 'Hybrid Approaches',
       items: [
-        'hybrid-approaches/digital-twins',
-        'hybrid-approaches/vr-ar-phygital',
-        'hybrid-approaches/smart-building-iot-design',
+        'hybrid/digital-twins',
+        'hybrid/vr-ar-phygital',
+        'hybrid/smart-building-iot-design',
       ],
     },
     {
       type: 'category',
       label: 'Methodologies',
       items: [
-        'methodologies/design-thinking-hcd',
-        'methodologies/lean-agile-design-sprints',
-        'methodologies/computational-parametric',
+        'methodology/design-thinking-hcd',
+        'methodology/lean-agile-design-sprints',
+        'methodology/computational-parametric',
       ],
     },
     {
