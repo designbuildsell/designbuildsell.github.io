@@ -26,6 +26,11 @@
             <category>inspiration</category>
             <category>essay</category>
             <category>about me</category>
+            <category>pillar:design</category>
+            <category>pillar:build</category>
+            <category>pillar:sell</category>
+            <category>level:foundational</category>
+            <category>type:article</category>
         </item>
     </channel>
 </rss>

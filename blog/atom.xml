@@ -29,5 +29,10 @@
         <category label="inspiration" term="inspiration"/>
         <category label="essay" term="essay"/>
         <category label="about me" term="about me"/>
+        <category label="pillar:design" term="pillar:design"/>
+        <category label="pillar:build" term="pillar:build"/>
+        <category label="pillar:sell" term="pillar:sell"/>
+        <category label="level:foundational" term="level:foundational"/>
+        <category label="type:article" term="type:article"/>
     </entry>
 </feed>

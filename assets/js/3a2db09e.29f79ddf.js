@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdbs=self.webpackChunkdbs||[]).push([[502],{8070:a=>{a.exports=JSON.parse('{"tags":[{"label":"quote","permalink":"/blog/tags/quote","count":1},{"label":"inspiration","permalink":"/blog/tags/inspiration","count":1},{"label":"essay","permalink":"/blog/tags/essay","count":1},{"label":"about me","permalink":"/blog/tags/about-me","count":1}]}')}}]);
