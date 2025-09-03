@@ -5,8 +5,9 @@
     <updated>2024-01-01T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://designbuildsell.xyz/blog"/>
-    <subtitle>Design Build Sell Blog</subtitle>
+    <subtitle>The latest articles and tutorials from the Design Build Sell.</subtitle>
     <icon>https://designbuildsell.xyz/img/favicon.ico</icon>
+    <rights>Copyright © 2025 DesignBuildSell.xyz</rights>
     <entry>
         <title type="html"><![CDATA[My Anthology]]></title>
         <id>https://designbuildsell.xyz/blog/my-anthology</id>

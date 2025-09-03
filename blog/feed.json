@@ -1,0 +1,31 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Design Build Sell Blog",
+    "home_page_url": "https://designbuildsell.xyz/blog",
+    "description": "The latest articles and tutorials from the Design Build Sell.",
+    "items": [
+        {
+            "id": "https://designbuildsell.xyz/blog/my-anthology",
+            "content_html": "<p>My Inspiration</p>\n<p>People</p>\n<p>Places</p>\n<p>Things</p>\n<p>Quotes</p>\n<p>Example file to use as starter template for documents</p>\n<p>Use a <code>&lt;!--</code> <code>truncate</code> <code>--&gt;</code> comment to limit blog post size in the list view.</p>\n<p>Long form post</p>",
+            "url": "https://designbuildsell.xyz/blog/my-anthology",
+            "title": "My Anthology",
+            "summary": "A short description of this page. Will override default",
+            "date_modified": "2024-01-01T00:00:00.000Z",
+            "author": {
+                "name": "AJ",
+                "url": "https://github.com/aecabhijeet"
+            },
+            "tags": [
+                "quote",
+                "inspiration",
+                "essay",
+                "about me",
+                "pillar:design",
+                "pillar:build",
+                "pillar:sell",
+                "level:foundational",
+                "type:article"
+            ]
+        }
+    ]
+}
