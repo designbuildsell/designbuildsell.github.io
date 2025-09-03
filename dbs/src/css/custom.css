@@ -5,6 +5,41 @@
  */
 
 /* You can override the default Infima variables here. */
+
+/* Footer Icons */
+.footer__link-item {
+  display: flex !important;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--ifm-footer-link-color);
+  text-decoration: none;
+}
+
+.footer__link-item:hover {
+  color: var(--ifm-footer-link-hover-color);
+  text-decoration: none;
+}
+
+.footer-icon, .rss-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  color: inherit;
+  flex-shrink: 0;
+}
+
+.footer-icon svg, .rss-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.footer__link-item:hover .footer-icon,
+.footer__link-item:hover .rss-icon {
+  color: inherit;
+}
 :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;

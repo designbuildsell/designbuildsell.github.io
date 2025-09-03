@@ -1,0 +1,28 @@
+{
+  "feeds": [
+    {
+      "id": "docusaurus-blog",
+      "url": "https://docusaurus.io/blog/rss.xml",
+      "name": "Docusaurus Blog",
+      "category": "official",
+      "enabled": true,
+      "maxItems": 5
+    },
+    {
+      "id": "react-blog",
+      "url": "https://react.dev/blog/rss.xml",
+      "name": "React Blog",
+      "category": "javascript-frameworks",
+      "enabled": true,
+      "maxItems": 3
+    },
+    {
+      "id": "vercel-blog",
+      "url": "https://vercel.com/atom",
+      "name": "Vercel Blog",
+      "category": "hosting",
+      "enabled": false,
+      "maxItems": 5
+    }
+  ]
+}
