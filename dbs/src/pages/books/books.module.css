@@ -1,0 +1,273 @@
+.booksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.searchContainer {
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  padding-left: 2.5rem;
+  border-radius: 50px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>');
+  background-repeat: no-repeat;
+  background-position: 1rem center;
+}
+
+.searchInput:focus {
+  border-color: var(--ifm-color-primary);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--ifm-color-primary-lightest);
+}
+
+/* Filter and Sort Bar */
+.controlsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Pill container */
+.pillContainer {
+  display: flex;
+  align-items: center;
+  background-color: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 50px; 
+  padding: 0.2rem 0.5rem 0.2rem 1.2rem;
+  transition: border-color 0.2s ease;
+}
+
+.pillContainer:focus-within {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px var(--ifm-color-primary-lightest);
+}
+
+.pillLabel {
+  font-weight: 600;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  margin-right: 0.5rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* Updated Select Input Style */
+.selectInput {
+  appearance: none;
+  border: none;
+  background: transparent;
+  padding: 0.4rem 2rem 0.4rem 0.5rem;
+  font-size: 0.95rem;
+  color: var(--ifm-font-color-base);
+  cursor: pointer;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+  background-repeat: no-repeat;
+  background-position: right 0.8rem center;
+  
+  /* Fix: Force browser to render native dropdown in dark mode if active */
+  color-scheme: light dark; 
+}
+
+/* Fix: Explicitly style options for browsers that support it */
+.selectInput option {
+  background-color: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+}
+
+.selectInput:focus {
+  outline: none;
+}
+
+/* Header */
+.headerContainer {
+  text-align: center;
+  padding: 4rem 0 2rem;
+}
+
+.headerTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.headerSubtitle {
+  font-size: 1.2rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 2rem;
+}
+
+/* Card Styling */
+.bookCard {
+  background-color: #1b1b1d;
+  border: 1px solid #303030;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+[data-theme='light'] .bookCard {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+}
+
+.bookCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.cardImageContainer {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 260px;
+  background-color: transparent;
+}
+
+.cardImage {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  border-radius: 4px;
+}
+
+.cardBody {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.cardAuthor {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 0.25rem;
+  font-style: italic;
+}
+
+.cardMetaRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-500);
+}
+
+.rating {
+  color: #FFD700; /* Gold color for stars */
+  font-weight: bold;
+}
+
+.viewDetailsBtn {
+  margin-top: auto;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0.6rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  color: var(--ifm-color-primary);
+  background: transparent;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+}
+
+.viewDetailsBtn:hover {
+  border-color: var(--ifm-color-primary);
+  background: rgba(46, 133, 85, 0.1);
+}
+
+/* Detail Page */
+.detailLayout {
+  display: flex;
+  gap: 3rem;
+  padding-top: 2rem;
+  align-items: flex-start;
+}
+
+.detailCover {
+  flex: 0 0 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.detailCover img {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+.detailContent {
+  flex: 1;
+}
+
+.detailActions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 996px) {
+  .detailLayout {
+    flex-direction: column;
+    align-items: center;
+  }
+  .detailCover {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 2rem;
+  }
+  .controlsContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}

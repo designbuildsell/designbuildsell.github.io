@@ -1,6 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import bookData from './src/data/books.json'; 
 
 const config: Config = {
   title: 'Design Build Sell',
@@ -104,7 +105,43 @@ const config: Config = {
         // ... other options
       },
     ],
-    '@docusaurus/plugin-ideal-image',
+    //'@docusaurus/plugin-ideal-image',
+    function booksPlugin(context, options) {
+      return {
+        name: 'docusaurus-books-plugin',
+        async contentLoaded({content, actions}) {
+          const {addRoute, createData} = actions;
+
+          // 1. Create a single JSON file for all books to be used by the index page (optional, but good practice)
+          // const booksJsonPath = await createData(
+          //   'books.json',
+          //   JSON.stringify(bookData),
+          // );
+
+          // 2. Create Static Detail Pages for every book
+          await Promise.all(
+            bookData.map(async (book) => {
+              // Create a unique JSON file for this specific book
+              const bookJsonPath = await createData(
+                `book-${book.slug}.json`,
+                JSON.stringify(book)
+              );
+
+              addRoute({
+                path: `/books/${book.slug}`,
+                component: '@site/src/templates/BookDetail.tsx',
+                exact: true,
+                // Pass the path to the created JSON file as a module
+                // The component will receive this as a prop named 'bookData'
+                modules: {
+                  bookData: bookJsonPath,
+                },
+              });
+            })
+          );
+        },
+      };
+    },
   ],
 
   themeConfig: {
