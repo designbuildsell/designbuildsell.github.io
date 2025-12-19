@@ -13,7 +13,7 @@ type SortOption = 'rating' | 'title' | 'newest' | 'oldest';
 export default function BooksPage(): JSX.Element {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
-  const [sortOption, setSortOption] = useState<SortOption>('rating');
+  const [sortOption, setSortOption] = useState<SortOption>('title');
 
   const filteredAndSortedBooks = useMemo(() => {
     // 1. Filter by Search Query
@@ -34,8 +34,9 @@ export default function BooksPage(): JSX.Element {
         case 'oldest':
           return parseInt(a.publication_year) - parseInt(b.publication_year);
         case 'rating':
+          return b.rating-a.rating;  
         default:
-          return b.rating - a.rating; // Descending rating
+          return a.title.localeCompare(b.title); // Alphabetical A-Z (Default)
       }
     });
 
@@ -91,10 +92,11 @@ export default function BooksPage(): JSX.Element {
                 onChange={(e) => setSortOption(e.target.value as SortOption)}
                 aria-label="Sort books"
               >
+                <option value="title">Alphabetical (A-Z)</option>
                 <option value="rating">Highest Rated</option>
                 <option value="newest">Newest First</option>
                 <option value="oldest">Oldest First</option>
-                <option value="title">Alphabetical (A-Z)</option>
+
               </select>
             </div>
           </div>
