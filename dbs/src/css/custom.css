@@ -50,6 +50,9 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* Banner gradient colors */
+  --banner-gradient-start: #10b981; /* emerald-500 */
+  --banner-gradient-end: #3b82f6; /* blue-500 */
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -62,4 +65,7 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  /* Dark mode banner gradient */
+  --banner-gradient-start: #059669; /* emerald-600 */
+  --banner-gradient-end: #2563eb; /* blue-600 */  
 }

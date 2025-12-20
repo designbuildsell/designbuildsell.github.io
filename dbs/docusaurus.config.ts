@@ -19,6 +19,8 @@ const config: Config = {
   organizationName: 'designbuildsell', // Usually your GitHub org/user name.
   projectName: 'website', // Usually your repo name.
 
+  onBrokenLinks: 'warn', // or 'ignore' if you want to completely suppress the errors
+  onBrokenAnchors: 'warn', // optional: for broken anchor links
   markdown: {
     hooks: {
     onBrokenMarkdownLinks: 'warn',
