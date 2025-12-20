@@ -12,7 +12,11 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
  */
 const sidebarsBuild: SidebarsConfig = {
   buildSidebar: [
-    'overview',
+    {
+      type: 'doc',
+      id: 'index', // This should be your main landing page
+      label: 'Build',
+    }, /*Following pages published but not visible in sidebar. Open when content ready for audience
     {
       type: 'category',
       label: 'Physical Build',
@@ -47,7 +51,7 @@ const sidebarsBuild: SidebarsConfig = {
         'project-management/methods-risk',
         'project-management/coordination-tools',
       ],
-    },
+    },*/
   ],
 };
 

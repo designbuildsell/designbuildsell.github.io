@@ -12,7 +12,11 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
  */
 const sidebarsDesign: SidebarsConfig = {
   designSidebar: [
-    'overview',
+    {
+      type: 'doc',
+      id: 'index', // This should be your main landing page
+      label: 'Design',
+    },/*Following pages published but not visible in sidebar. Open when content ready for audience
     {
       type: 'category',
       label: 'Physical Design',
@@ -53,7 +57,7 @@ const sidebarsDesign: SidebarsConfig = {
       type: 'category',
       label: 'Tools & Software',
       items: ['tools-and-software/overview'],
-    },
+    },*/
   ],
 };
 

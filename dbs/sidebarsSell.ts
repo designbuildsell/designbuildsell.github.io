@@ -12,7 +12,11 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
  */
 const sidebarsSell: SidebarsConfig = {
   sellSidebar: [
-    'overview',
+    {
+      type: 'doc',
+      id: 'index', // This should be your main landing page
+      label: 'Sell',
+    },/*Following pages published but not visible in sidebar. Open when content ready for audience
     {
       type: 'category',
       label: 'Physical Sales',
@@ -44,7 +48,7 @@ const sidebarsSell: SidebarsConfig = {
       type: 'category',
       label: 'Market Analysis & Strategy',
       items: ['market-analysis-and-strategy/overview'],
-    },
+    },*/
   ],
 };
 
