@@ -1,16 +1,5 @@
 ---
 title: "Design: Where Physical and Digital Creation Converge"
-slug: /design
-tags:
-  - "pillar:design"
-  - "domain:hybrid"
-  - "audience:founder"
-  - "audience:student" 
-  - "audience:pm"
-  - "audience:architect"
-  - "level:foundational"
-  - "type:overview"
-version: '1.0'
 description: "Explore the convergence of physical architecture and digital design systems. Learn how to bridge traditional design practices with computational thinking, IoT integration, and user-centered digital experiences for the built environment."
 ---
 
