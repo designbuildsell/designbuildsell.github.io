@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdbs=self.webpackChunkdbs||[]).push([[442],{3885:s=>{s.exports=JSON.parse('{"tag":{"label":"pillar:sell","permalink":"/sell/tags/pillar-sell","allTagsPath":"/sell/tags","count":1,"items":[{"id":"index","title":"Tutorial Intro","description":"Let\'s discover Docusaurus in less than 5 minutes.","permalink":"/sell/"}],"unlisted":false}}')}}]);
