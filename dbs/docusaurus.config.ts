@@ -19,8 +19,12 @@ const config: Config = {
   organizationName: 'designbuildsell', // Usually your GitHub org/user name.
   projectName: 'website', // Usually your repo name.
 
-  onBrokenLinks: 'warn',//use 'throw' instead to stop 'npm run build' on broken links
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+    onBrokenMarkdownLinks: 'warn',
+    // Other markdown-related hooks can go here
+    },
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -78,7 +82,7 @@ const config: Config = {
         id: 'design',
         path: 'design-docs',
         routeBasePath: 'design',
-        sidebarPath: './sidebarsDesign.ts',
+        sidebarPath: false, // './sidebarsDesign.ts', uncomment when content available
         editUrl: 'https://github.com/designbuildsell/designbuildsell.github.io/tree/main/dbs/',
         // ... other options
       },
@@ -89,7 +93,7 @@ const config: Config = {
         id: 'build',
         path: 'build-docs',
         routeBasePath: 'build',
-        sidebarPath: './sidebarsBuild.ts',
+        sidebarPath: false, //'./sidebarsBuild.ts', uncomment when content available
         editUrl: 'https://github.com/designbuildsell/designbuildsell.github.io/tree/main/dbs/',
         // ... other options
       },
@@ -100,7 +104,7 @@ const config: Config = {
         id: 'sell',
         path: 'sell-docs',
         routeBasePath: 'sell',
-        sidebarPath: './sidebarsSell.ts',
+        sidebarPath: false, //'./sidebarsSell.ts', uncomment when content available
         editUrl: 'https://github.com/designbuildsell/designbuildsell.github.io/tree/main/dbs/',
         // ... other options
       },
@@ -149,7 +153,7 @@ const config: Config = {
     image: 'img/favicon.ico',
     //Some meta tags for SEO
     metadata: [
-      {name: 'keywords', content: 'design, build, sell, blog, tutorial, architecture, engineering, construction, software, product, saas'},
+      {name: 'keywords', content: 'design, build, sell, architecture, engineering, construction, software, product, saas, blog, tutorial'},
       {name: 'twitter:card', content: 'summary_large_image'},
     ],
     //Algolia Doc Search
